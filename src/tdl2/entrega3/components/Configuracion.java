@@ -12,7 +12,6 @@ public class Configuracion extends JDialog {
 	private JLabel lblContra;
 	private JTextField tfUsuario;
 	private JPasswordField pf;
-	private static JDialog prueba;
 	private JButton btnGuardar;
 	public Configuracion() throws HeadlessException {
 		super();

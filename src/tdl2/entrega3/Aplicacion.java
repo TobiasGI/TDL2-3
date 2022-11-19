@@ -14,9 +14,10 @@ public class Aplicacion {
 
 	public static void main(String[] args) {
 		//Probando interfaces
-		MainFrame panel = new MainFrame();
-		panel.setVisible(true);
-		
+		//MainFrame panel = new MainFrame();
+		//panel.setVisible(true);
+		IngresarFutbolista ingresarF = new IngresarFutbolista("Nuevo Futbolista");
+		ingresarF.setVisible(true);
 
 	}
 

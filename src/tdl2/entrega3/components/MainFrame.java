@@ -13,6 +13,7 @@ public class MainFrame extends JFrame {
 
 	private JPanel panel;
 	private JButton btnConf;
+	private JButton btnEst;
 	
 	public MainFrame() {
 		 // Frame
@@ -56,7 +57,8 @@ public class MainFrame extends JFrame {
             e.printStackTrace();
         }*/
 		 subPanel.add(btnConf);
-		 subPanel.add(new JButton("lala"));
+		 this.setEstadisticas();
+		 subPanel.add(btnEst);
 		 subPanel.add(new JPanel());
 		 subPanel.add(new JPanel());
 		 subPanel.add(new JPanel());
@@ -78,6 +80,16 @@ public class MainFrame extends JFrame {
 		 subPanel.add(new JButton("SIN DEFINIR"));
 		 panel.add(subPanel, BorderLayout.CENTER);
 		 this.add(panel);
-	} 
+	}
+	
+	public void setEstadisticas() {
+		Estadisticas est = new Estadisticas();
+		btnEst = new JButton("Estadisticas");
+		btnEst.addMouseListener(new MouseAdapter() {
+	           public void mouseClicked(MouseEvent e) {
+	               est.setVisible(true);
+	           }
+		});
+	}
 
 }
